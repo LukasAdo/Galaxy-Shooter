@@ -42,6 +42,8 @@ public class Player : MonoBehaviour
 
     private UIManager uiManager;
 
+  
+
 
     // Start is called before the first frame update
     void Start()
@@ -131,6 +133,8 @@ public class Player : MonoBehaviour
         {
             spawnManager.OnDeath();
             uiManager._gameOver();
+            uiManager.restartGame();
+            
             Destroy(gameObject);
         }
     }
